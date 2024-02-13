@@ -1,7 +1,42 @@
 \chapter{Answers}
 \label{cp:answers}
-\section{Question 1}
-\begin{importantbox}
-    This is the question.
-\end{importantbox}
-\noindent{}This is the answer.
+\section{Calibration}
+
+\begin{enumerate}
+    \item Connect the Setra electronic manometer to the computer used for data collection.
+    \item Connect a tube from the Mensor digital pressure gauge to the plenum chamber. Connect a tube from the Setra electronic manometer to the plenum chamber. Connect a pump to the valve on the plenum chamber.
+    \item Using the valve, release the pressure in the plenum chamber until the Mensor digital pressure gauge reads \qty{0}{inH_20}. Record the voltage reading from the Setra electronic manometer.
+    \item Using the pump, pressurize the plenum chamber until the Mensor digital pressure gauge reads \qty{5}{inH_20}. Record the voltage reading from the Setra electronic manometer.
+    \item Release some pressure, let the Mensor digital pressure gauge stabilize, and record the voltage reading from the Setra electronic manometer. Use the filename of the voltage data to denote what the pressure reading of the Mensor digital pressure gauge was for that reading. \label{it:take_measurement}
+    \item Repeat \autoref{it:take_measurement} until the pressure reading on the Mensor digital pressure gauge reads \qty{0}{inH_20}. Take at least \num{10} data points. If you reach \qty{0}{inH_20} before you have collected \num{10} data points, re-pressurize to \qty{5}{inH_20} and repeat \autoref{it:take_measurement} until you have acquired a sufficient number of data points.
+    \item Copy the data from the support computer to a flash drive for later analysis.
+\end{enumerate}
+
+\section{Data Collection}
+
+\begin{enumerate}
+    \item Connect the total pressure port on the pitot tube to the main port on the Serta electronic manometer. Connect the static pressure port on the pitot tube to the reference port on the manometer. The voltage reading corresponds to the dynamic pressure in the test chamber of the wind tunnel.
+    \item Using the data collected in the previous lab to determine the relationship between the motor frequency and velocity in the wind tunnel, set the wind tunnel to \qty{10}{\meter\per\second}.
+    \item Start by positioning the pitot tube at the wall of the wind tunnel test chamber and record the voltage reading from the Serta electronic manometer.
+    \item Move the pitot tube in from the wall by \qty{0.5}{inches}. \label{it:take_pitot_measurement}
+    \item Repeat \autoref{it:take_pitot_measurement} for \numrange{10}{20} locations, ideally until the pitot tube is about halfway through the test section.
+    \item Copy the data from the support computer to a flash drive for later analysis.
+\end{enumerate}
+
+\section{Repeatability and Uncertainties}
+
+Since humans are prone to error and the tools we are using are imperfect, the following steps will be taken to improve repeatability:
+
+\begin{itemize}
+    \item Samples from the Serta electronic manometer will be performed after any movement or change in pressure has settled.
+    \item When the Serta electronic manometer is sampled, the computer will record data for several seconds and the mean of this data will be recorded as the data point.
+    \item During calibration of the Serta electronic manometer, at least \num{10} data points will be gathered between \qtyrange{0}{5}{inH_20}.
+\end{itemize}
+
+Despite our efforts to improve repeatability, the following factors may introduce uncertainty into our measurements and results:
+
+\begin{itemize}
+    \item Foreign objects, imperfections, or leaks in the pressure tubes or plenum chamber.
+    \item Anomalies or inconsistencies in the Mensor digital pressure gauge or the Serta electronic manometer.
+    \item Placement of the pitot tube in the wind tunnel.
+\end{itemize}
